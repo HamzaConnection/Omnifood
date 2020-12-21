@@ -1,0 +1,622 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #555555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility; 
+    scroll-behavior: smooth;
+
+}
+
+.clearfix {zoom:1}
+.clearfix::after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* BASIC SETUP*/
+/*-----------------------------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 0;
+       
+}
+
+
+/* this shows that you can make a class like this <div class="col span-1-of-4 box"> and target it only using .box */
+
+.box p{
+    padding: 1%;
+    line-height: 145%;
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* REUSEABLE COMPONENT*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+.section-icon {
+    font-size: 300%;
+    display: block;
+    color: #cf6d17;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* ICONS*/
+/*-----------------------------------------------------------------------------------*/
+
+
+.btn-full,
+input[type=submit] {
+    background-color:#e67e22;
+    color: white;
+}
+
+.btn-ghost {
+    border: 1px solid #e67e22;
+    color: #cf6d17;
+    background-color: white;
+}
+
+.btn:hover,
+.btn:active, 
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #cf6d17;
+    color: white;
+}
+
+.btn,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/* BUTTONS*/
+/*-----------------------------------------------------------------------------------*/
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+h1, h2 {
+    
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+
+ h2 {
+    font-size: 180%;
+    word-spacing: 1px;
+    text-align: center;
+    margin-bottom: 20px;
+
+ }
+
+ h2:after {
+    display: block;
+    height: 2px;
+    background-color: #cf6d17;
+    content: " ";
+    width: 75%;
+    margin: 20px auto;
+    
+ }
+
+ h3 {
+     margin-bottom: 20px;
+     word-spacing: 3px;
+     letter-spacing: 1.5px;
+ }
+
+.hero-text-box
+{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-100%);
+}
+
+.logo
+{
+    height: 125px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+}
+
+
+.logo-black {
+     display: none;
+     height: 50px;
+     width: auto;
+     float: left;
+     margin: 10px 0;
+    }
+
+/* Main navigation */
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px ;
+}
+
+.main-nav li {
+    display: inline;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a{
+    /*color: rgb(168, 153, 153);*/
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 90%;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #cf6d17;
+}
+
+/* Main navigation */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px #bbbbbb;
+    transition: top 0.3s;
+    z-index: 1;
+    
+}
+
+.sticky .logo {display: none;}
+.sticky .logo-black {display: block;}
+
+.main-nav {
+    margin-top: 20px ;
+}
+
+.mobile-nav-icon {
+    display: none;
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.closeNavIcon
+{
+    display: none;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*HEADER*/
+/*-----------------------------------------------------------------------------------*/
+
+
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 40px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* PAAGRAPHS*/
+/*-----------------------------------------------------------------------------------*/
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.meal-photo img {
+    width: 100%;
+    height: auto;    
+    transition: 500ms; 
+    transform: scale(1.025);
+}
+
+.meal-photo img:hover {
+    
+    transform: scale(1.15);
+   
+}
+/*-----------------------------------------------------------------------------------*/
+/*MEALS*/
+/*-----------------------------------------------------------------------------------*/
+
+.section-steps {
+    background-color: #f1f1f1;
+}
+
+.step-box:first-child {
+    margin-top: 30px;
+    text-align: right;
+    padding-right: 3%;
+}
+
+.step-box:last-child {
+    margin-top: 70px;
+    padding-left:3%;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step:last-child {
+    margin-bottom: 90px;
+}
+
+.work-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*Section steps*/
+/*-----------------------------------------------------------------------------------*/
+
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 4px;
+}
+
+.icon-small {
+
+    color: #e67e22;
+    /*secrets to align text and icons*/
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+
+.city-feature a{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22 ;
+}
+
+.city-feature a:hover{
+color: #555;
+border-bottom: 1px solid transparent;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*Cities*/
+/*-----------------------------------------------------------------------------------*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/back-customers.jpg);
+    background-size: cover;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+blockquote:before {
+    content: "\201C"; /* This is to make a quotation mark*/
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -9px;
+}
+
+
+cite img{
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*Testimonials*/
+/*-----------------------------------------------------------------------------------*/
+
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #bfbfbf;
+}
+
+.plan-box div {
+    padding: 20px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.plan-box div:first-child {
+    background-color: #fafafa88;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border:0;
+}
+
+.plan-box h3 {
+    text-align: center;
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    
+    color: #e67e22;
+    text-align: center;
+}
+
+.plan-price span {
+    font-size: 30%;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box li {
+    padding: 5px 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*Section-plans*/
+/*-----------------------------------------------------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cccccc
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=submit] {
+    border: 1px solid #e67e22;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+input[type=submit]:focus, 
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=checkbox]:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*Section-form*/
+/*-----------------------------------------------------------------------------------*/
+
+
+footer {
+    background-color: #333333;
+    padding-top: 10px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+.social-links li:last-child,
+.footer-nav li:last-child{
+    margin-right: 0;
+}
+
+
+
+.social-links a,
+.footer-nav a{
+    color: #aaaaaa;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid transparent;
+    font-size: 90%;
+}
+
+.social-links a:hover,
+.footer-nav a:hover{
+    color: white;
+    border-bottom: 1px solid white ;
+}
+
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*Footer*/
+/*-----------------------------------------------------------------------------------*/
+
+.copy-right {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 70%;
+    color: #aaaaaa;
+    
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*OTHER*/
+/*-----------------------------------------------------------------------------------*/
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
