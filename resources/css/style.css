@@ -108,8 +108,12 @@ input[type=submit] {
 
 
 header {
+    background-image: url("img/hero.jpg"); /* fallback */
     background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url("img/hero.jpg");
     height: 100vh;
+  /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
