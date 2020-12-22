@@ -15,11 +15,14 @@
 
 @media only screen and (max-width: 1023px) {
     
+   
     header {
         background-image: url("img/hero.jpg");
         height: 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
+        background-size: cover;
+        -webkit-background-size: cover;
     }
     
     body { font-size: 18px;}
@@ -80,13 +83,15 @@
 
 @media only screen and (max-width: 767px) {
     
+ 
     header {
         background-image: url("img/hero.jpg");
         height: 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
+        background-size: cover;
+        -webkit-background-size: cover;
     }
-
     
     
     body { font-size: 14px;}
@@ -182,7 +187,8 @@
         height: 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
-        
+        background-size: cover;
+        -webkit-background-size: cover;
     }
 
 
