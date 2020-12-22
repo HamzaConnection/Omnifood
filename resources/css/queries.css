@@ -17,11 +17,13 @@
     
    
     header {
-        background-image: url("img/hero.jpg");
+        background: url("img/hero.jpg");
         height: 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
         background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
         -webkit-background-size: cover;
     }
     
@@ -85,11 +87,13 @@
     
  
     header {
-        background-image: url("img/hero.jpg");
+        background: url("img/hero.jpg");
         height: 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
         background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
         -webkit-background-size: cover;
     }
     
@@ -183,11 +187,13 @@
     }
 
     header {
-        background-image: url("img/hero.jpg");
+        background: url("img/hero.jpg");
         height: 100vh;
         /* mobile viewport bug fix */
         min-height: -webkit-fill-available;
         background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
         -webkit-background-size: cover;
     }
 
