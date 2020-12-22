@@ -2,8 +2,7 @@
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        console.log("Current scroll position:" + currentScrollPos)
-        if (prevScrollpos > currentScrollPos) {
+        if (prevScrollpos > currentScrollPos || currentScrollPos == 0) {
             document.querySelector("nav").style.top = "0";
         } else {
             document.querySelector("nav").style.top = "-125px";
