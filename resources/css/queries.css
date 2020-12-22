@@ -14,6 +14,14 @@
 }
 
 @media only screen and (max-width: 1023px) {
+    
+    header {
+        background-image: url("img/hero.jpg");
+        height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+    }
+    
     body { font-size: 18px;}
 
     section {
@@ -71,6 +79,16 @@
 }
 
 @media only screen and (max-width: 767px) {
+    
+    header {
+        background-image: url("img/hero.jpg");
+        height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+    }
+
+    
+    
     body { font-size: 14px;}
     section {padding: 30px 0;}
 
@@ -158,5 +176,15 @@
         margin-left: 10px;
         display: none;
     }
+
+    header {
+        background-image: url("img/hero.jpg");
+        height: 100vh;
+        /* mobile viewport bug fix */
+        min-height: -webkit-fill-available;
+    }
+
+
+    
 }
 
